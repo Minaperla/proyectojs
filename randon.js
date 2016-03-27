@@ -20,7 +20,7 @@ tiraDatos();
 tiraDatos();*/
 
 /*function max(num1,num2)
-{}
+{
 	if(num1>num2);
 	{
 		var numay + num2;
@@ -41,7 +41,7 @@ tiraDatos();*/
 	saludo();*/
 
 
-	var num= prompt("Ingrese un numero");
+	/*var num= prompt("Ingrese un numero");
 
 	if(isNaN(num))
 	{      
@@ -51,4 +51,39 @@ tiraDatos();*/
 	{  
 		num = num * 0.5;
 	}
-	alert(num);
+	alert(num);*/
+
+	/*function numeroAlAzarEntreLimites(limiteInferior, limiteSuperior)
+	{
+		if (isNaN(limiteInferior) || isNaN(limiteSuperior)) 
+		{
+			throw new Error("Valor igresado no coresponde a un numero");;
+		}
+		var num = Math.round(Math.random() *(LimiteSuperior - limiteInferior)) + limiteInferior;
+		return num;
+	}
+	 var limitesuperior = prompt("ingrese un limite ");
+	 var limiteinferior = prompt("ingrese un limite ");
+
+	alert("Su numero al azar es:" + numeroAlAzarEntreLimites)(parseInt(limiteInferior),parseInt(limiteSuperior));
+	*/
+
+function numazarlimites(lim1, lim2) 
+{
+var num = Math.round(Math.random() * (lim1-lim2)) + lim2;
+return num;
+}
+var limiteSuperior = prompt("Ingrese un limite superior");
+var limiteInferior = prompt("Ingrese un limite inferior");
+
+if(isNaN(limiteInferior) || isNaN(limiteSuperior))
+{
+throw new Error("valor ingresado no es un numero");;
+}
+var contador = 0;
+while(contador<10)
+{
+var randomico=numazarlimites(parseInt(limiteInferior),parseInt(limiteSuperior));
+document.write(randomico + "  ");
+contador++;
+}
