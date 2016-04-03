@@ -89,13 +89,14 @@ contador++;
 }*/
 
 
-function numeroAlAzar()
+/*function numeroAlAzar()
 {
 	var num=Math.floor(Math.random() * 100) +  1;
 	return num; 
 }
-var numero = numeroAlAzar();
+
 var contador = 0;
+var numero = numeroAlAzar();
 
 while  (true)
 {
@@ -104,9 +105,18 @@ contador = contador +1;
 num2 = numeroAlAzar ();
 if (numero === num2)
 {
-	alert("El numero inicial era: " + numero);
+	alert("El numero pensado: " + numero);
 	alert("El numero adivinado: " + num2);
 	break;
 }
 }
-alert("el numero intentos es:" + contador);
+alert("EL CONTEO ES:" + contador +  " VECES ");*/
+
+
+console.log("Inicio de programa");
+var html="";
+
+for (var i= 1; i<= 10;i++) {
+	html +="<div>" + i + "</div>";}
+	document.write(html);
+	console.log("Programa completado");
